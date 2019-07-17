@@ -13,8 +13,9 @@ const Users = memo(() => {
   }, [dispatch]);
 
   console.log(contextValue, 'Users context value');
+  console.log(users);
 
-  return <div>Users</div>;
+  return <div>{users && users.users}</div>;
 });
 
 export default Users;
