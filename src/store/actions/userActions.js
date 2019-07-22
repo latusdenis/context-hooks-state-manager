@@ -1,8 +1,5 @@
-import * as types from "../actionTypes";
+import { getUsersData } from '../actionCreators/userActionCreators';
 
 export const getUsers = (payload, dispatch) => {
-  dispatch({
-    type: types.GET_USERS,
-    payload
-  });
+  dispatch(getUsersData(payload));
 };
